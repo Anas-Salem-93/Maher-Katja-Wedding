@@ -2,7 +2,7 @@ const translations = {
     de: {
         title: "Wir heiraten!",
         couple_names: "Maher & Katja",
-        date: "03. & 04. Juli 2026",
+        date: "04. Juli 2026",
         program_title: "Das Programm",
         
         // Freitag
@@ -30,7 +30,7 @@ const translations = {
     en: {
         title: "We are getting married!",
         couple_names: "Maher & Katja",
-        date: "July 3rd & 4th, 2026",
+        date: "July 4th, 2026",
         program_title: "The Program",
         
         friday_date: "Friday, July 3rd, 2026",
@@ -55,7 +55,7 @@ const translations = {
     ar: {
         title: "نتشرف بدعوتكم لحفل زفافنا",
         couple_names: "ماهر و كاتيا",
-        date: "3 و 4 يوليو 2026",
+        date: ".4 يوليو 2026",
         program_title: "برنامج الحفل",
         
         friday_date: "الجمعة، 3 يوليو 2026",
@@ -80,7 +80,7 @@ const translations = {
     cs: {
         title: "Budeme se brát!",
         couple_names: "Maher & Katja",
-        date: "3. a 4. července 2026",
+        date: " 4. července 2026",
         program_title: "Program",
         
         friday_date: "Pátek, 3. 7. 2026",
