@@ -9,7 +9,7 @@ const translations = {
         friday_date: "Freitag, 03.07.2026",
         friday_note: "(Nur für Gäste von außerhalb Prags)",
         friday_event: "Get-together",
-        friday_desc: "Bei Katjas Eltern. Für Essen & Trinken ist gesorgt.\nAdresse: Masarykovo nábřeží 4, Prag 2",
+        friday_desc: "Bei Katjas Eltern.\n Essen & Trinken vorhanden.\nAdresse: Masarykovo nábřeží 4, Prag 2",
         
         // Samstag
         saturday_date: "Samstag, 04.07.2026",
@@ -122,3 +122,4 @@ function changeLanguage(lang) {
     }
 
 }
+
