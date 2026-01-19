@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Wedding of [Name] & [Name]</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Great+Vibes&family=Lato:wght@300;400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <div class="language-switcher">
+        <button onclick="changeLanguage('en')">🇺🇸 EN</button>
+        <button onclick="changeLanguage('de')">🇩🇪 DE</button>
+        <button onclick="changeLanguage('ar')">🇸🇦 AR</button>
+        <button onclick="changeLanguage('cs')">🇨🇿 CZ</button>
+    </div>
+
+    <header class="hero">
+        <div class="hero-content">
+            <h1 data-key="title">Wir heiraten!</h1>
+            <h2 data-key="couple_names">Name & Name</h2>
+            <p data-key="date">20. August 2024</p>
+        </div>
+    </header>
+
+    <section id="program" class="container">
+        <h2 data-key="program_title">Das Programm</h2>
+        <div class="timeline">
+            <div class="event">
+                <span class="time">14:00</span>
+                <h3 data-key="ceremony">Trauung</h3>
+                <p data-key="ceremony_desc">Kirche St. Beispiel, Musterstadt</p>
+            </div>
+            <div class="event">
+                <span class="time">16:00</span>
+                <h3 data-key="reception">Sektempfang</h3>
+                <p data-key="reception_desc">Im Garten der Location</p>
+            </div>
+            <div class="event">
+                <span class="time">18:00</span>
+                <h3 data-key="dinner">Abendessen</h3>
+                <p data-key="dinner_desc">Festsaal</p>
+            </div>
+             <div class="event">
+                <span class="time">22:00</span>
+                <h3 data-key="party">Party</h3>
+                <p data-key="party_desc">Open End!</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="menu" class="container bg-light">
+        <h2 data-key="menu_title">Das Menü</h2>
+        <div class="menu-content">
+            <div class="menu-item">
+                <h3 data-key="starter">Vorspeise</h3>
+                <p data-key="starter_desc">Kürbissuppe mit Kernöl</p>
+            </div>
+            <div class="menu-item">
+                <h3 data-key="main">Hauptgang</h3>
+                <p data-key="main_desc">Rinderbraten mit Spätzle / Vegane Lasagne</p>
+            </div>
+            <div class="menu-item">
+                <h3 data-key="dessert">Dessert</h3>
+                <p data-key="dessert_desc">Hochzeitstorte & Mousse au Chocolat</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="upload" class="container">
+        <h2 data-key="upload_title">Fotos & Videos</h2>
+        <p data-key="upload_text">Bitte ladet eure schönsten Momente hier hoch, damit wir sie alle sehen können!</p>
+        
+        <a href="https://drive.google.com/drive/folders/1W-xhW5Sx36Vlb3QXpJFCqIfKyFkcAvUf?usp=sharing" target="_blank" class="btn" data-key="upload_btn">Bilder hochladen</a>
+    </section>
+
+    <footer>
+        <p>&copy; 2024 - Made with ❤️ for friends</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
