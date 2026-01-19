@@ -24,7 +24,7 @@ body.rtl {
 
 /* Hero Section mit Hintergrundbild */
 .hero {
-    background-image: url('images/background.jpg'); /* Dein Bild hier */
+    background-image: url('background.jpg'); /* Dein Bild hier */
     background-size: cover;
     background-position: center;
     height: 80vh; /* 80% der Bildschirmhöhe */
@@ -117,4 +117,5 @@ body.rtl .timeline {
 @media (max-width: 600px) {
     h1 { font-size: 3rem; }
     h2 { font-size: 2rem; }
+
 }
