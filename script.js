@@ -80,7 +80,7 @@ const translations = {
     cs: {
         title: "Budeme se brát!",
         couple_names: "Maher & Katja",
-        date: " 4. července 2026",
+        date: " 04. července 2026",
         program_title: "Program",
         
         friday_date: "Pátek, 3. 7. 2026",
@@ -120,4 +120,5 @@ function changeLanguage(lang) {
     } else {
         document.body.classList.remove('rtl');
     }
+
 }
