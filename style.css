@@ -1,4 +1,6 @@
-/* Grundlegende Einstellungen */
+/* style.css - KOMPLETT */
+
+/* 1. Grundlegende Einstellungen & Schriftarten */
 :root {
     --primary-color: #d4af37; /* Gold */
     --text-color: #333;
@@ -22,12 +24,13 @@ body.rtl {
     direction: rtl;
 }
 
-/* Hero Section mit Hintergrundbild */
+/* 2. Hero Section (Das große Bild oben) */
 .hero {
-    background-image: url('background.jpg'); /* Dein Bild hier */
+    /* Stelle sicher, dass background.jpg im Ordner 'images' liegt! */
+    background-image: url('background.jpg'); 
     background-size: cover;
     background-position: center;
-    height: 80vh; /* 80% der Bildschirmhöhe */
+    height: 80vh; 
     display: flex;
     align-items: center;
     justify-content: center;
@@ -35,7 +38,7 @@ body.rtl {
     position: relative;
 }
 
-/* Dunkler Overlay damit Text lesbar ist */
+/* Dunkler Overlay damit Text auf dem Bild lesbar ist */
 .hero::before {
     content: '';
     position: absolute;
@@ -51,7 +54,7 @@ body.rtl {
 h1 { font-family: var(--font-heading); font-size: 4rem; margin-bottom: 0.5rem; }
 h2 { font-size: 2rem; font-weight: 300; text-transform: uppercase; letter-spacing: 2px; }
 
-/* Container & Sections */
+/* 3. Layout Container */
 .container {
     padding: 4rem 1rem;
     max-width: 800px;
@@ -60,10 +63,16 @@ h2 { font-size: 2rem; font-weight: 300; text-transform: uppercase; letter-spacin
 
 .bg-light { background-color: var(--light-bg); }
 
-h2 { font-family: var(--font-heading); font-size: 3rem; margin-bottom: 2rem; color: var(--primary-color); }
+/* Überschriften im Text */
+section h2 { 
+    font-family: var(--font-heading); 
+    font-size: 3rem; 
+    margin-bottom: 2rem; 
+    color: var(--primary-color); 
+}
 h3 { margin-bottom: 0.5rem; font-weight: 700; }
 
-/* Timeline Stylings */
+/* 4. Timeline / Programm Design */
 .timeline {
     border-left: 2px solid var(--primary-color);
     padding-left: 20px;
@@ -71,7 +80,7 @@ h3 { margin-bottom: 0.5rem; font-weight: 700; }
     margin-left: 20px;
 }
 
-/* Timeline Anpassung für Arabisch */
+/* Anpassung für Arabisch (Timeline rechts) */
 body.rtl .timeline {
     border-left: none;
     border-right: 2px solid var(--primary-color);
@@ -81,8 +90,39 @@ body.rtl .timeline {
     margin-right: 20px;
 }
 
-.event, .menu-item { margin-bottom: 2rem; }
-.time { font-weight: bold; color: var(--primary-color); }
+.event { margin-bottom: 2rem; }
+.time { font-weight: bold; color: var(--primary-color); display: block; margin-bottom: 5px;}
+
+/* NEU: Design für die Tage (Freitag/Samstag) */
+.day-header {
+    color: var(--text-color);
+    font-family: var(--font-body);
+    font-size: 1.5rem;
+    text-transform: uppercase;
+    border-bottom: 1px solid #ddd;
+    padding-bottom: 5px;
+    margin-bottom: 20px;
+    margin-top: 40px; /* Abstand nach oben */
+    font-weight: bold;
+}
+
+.note {
+    font-size: 0.9rem;
+    color: #666;
+    margin-bottom: 15px;
+    font-style: italic;
+}
+
+/* 5. Geschenke & Upload */
+#gifts {
+    text-align: center;
+    padding: 3rem 1rem;
+}
+
+#gifts p {
+    font-size: 1.1rem;
+    line-height: 1.8;
+}
 
 /* Buttons */
 .btn {
@@ -97,6 +137,7 @@ body.rtl .timeline {
 }
 .btn:hover { background-color: #b59020; }
 
+/* 6. Sprachumschalter */
 .language-switcher {
     position: absolute;
     top: 20px;
@@ -111,11 +152,23 @@ body.rtl .timeline {
     margin: 0 2px;
     cursor: pointer;
     border-radius: 4px;
+    font-weight: bold;
+}
+.language-switcher button:hover {
+    background: white;
+}
+
+/* Footer */
+footer {
+    padding: 20px;
+    background: #333;
+    color: #fff;
+    font-size: 0.8rem;
 }
 
 /* Mobile Optimierung */
 @media (max-width: 600px) {
     h1 { font-size: 3rem; }
-    h2 { font-size: 2rem; }
-
+    h2 { font-size: 1.5rem; }
+    .day-header { font-size: 1.2rem; }
 }
